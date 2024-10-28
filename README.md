@@ -66,4 +66,4 @@ This open-source project is available under the [MIT License](https://opensource
 
 ## Acknowledgements
 - [OpenWeatherMap](https://opensource.org/license/mit) for providing the weather data.
-- 
+
