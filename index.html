@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather me</title>
+        <link rel="shortcut icon" href="./assests/moon-angled-rain-zap-stroke-rounded.svg" type="image/x-icon" />
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <main>
+            <form action="">
+                <input type="text" autocomplete="off" id="valueSearch" placeholder="Enter the city" />
+                <button><img src="./assests/search-01-stroke-rounded.svg" alt="search-icon" /></button>
+            </form>
+            <div id="errorMessage" class="hidden">City not found</div>
+
+            <section class="result">
+                <figure class="name" id="city">
+                    <figcaption>Ta'if</figcaption>
+                    <img src="https://flagsapi.com/SA/shiny/32.png" alt="" />
+                </figure>
+                <figure class="temperature" id="temperature">
+                    <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="" />
+                    <figcaption>
+                        <span>31</span>
+                        <sup>o</sup>
+                    </figcaption>
+                </figure>
+                <p class="description" id="description">Overcast Clouds</p>
+
+                <ul>
+                    <li>
+                        <span>Clouds</span>
+                        <img src="./assests/cloud-angled-rain-stroke-rounded.svg" alt="" />
+                        <span id="Clouds">98</span>
+                    </li>
+                    <li>
+                        <span>Humidty</span>
+                        <img src="./assests/humidity-stroke-rounded.svg" alt="" />
+                        <span id="Humidty">55</span>
+                    </li>
+                    <li>
+                        <span>Presure</span>
+                        <img src="./assests/blood-pressure-stroke-rounded.svg" alt="" />
+                        <span id="hPa">1001</span>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <script src="./scripts/app.js"></script>
+    </body>
+</html>

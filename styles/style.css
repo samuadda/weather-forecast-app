@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+main {
+    width: 300px;
+    height: max-content;
+    min-height: 300px;
+    background-color: #ffffff88;
+    backdrop-filter: blur(16px);
+    border-radius: 30px;
+    box-shadow: 5px 9px 20px 8px #ffffff40;
+    padding: 30px;
+}
+
+form {
+    border: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+form input,
+form button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+    caret-color: grey;
+}
+
+form input {
+    color: gray;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: #000000;
+    font-size: 14px;
+    opacity: 0.5;
+    font-weight: 300;
+}
+
+form button {
+    opacity: 0.7;
+}
+
+main .result {
+    padding-top: 20px;
+    text-align: center;
+}
+
+main .result .name {
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main .temperature img {
+    width: 150px;
+    filter: drop-shadow(0 10px 50px #fff);
+}
+
+main .temperature figcaption {
+    font-size: 3rem;
+}
+
+main .description {
+    padding: 10px 0 30px;
+    text-transform: capitalize;
+}
+
+main ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+main li {
+    background-color: #8bc6ec;
+    background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 10px;
+    background-image: linear-gradient(to bottom);
+    font-weight: bold;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main li img {
+    width: 20px;
+    font-display: block;
+    margin: 20px 0;
+}
+
+main li:nth-child(2) {
+    background-color: #faaca8;
+    background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);
+}
+
+main li:nth-child(3) {
+    background-color: #fbab7e;
+    background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+
+main.error {
+    animation: errorEffect 0.3s linear 1;
+}
+
+@keyframes errorEffect {
+    0% {
+        transform: translate(10px, 5px);
+    }
+    25% {
+        transform: translate(-5px, 0);
+    }
+    50% {
+        transform: translate(8px, 2px);
+    }
+    75% {
+        transform: translate(-2px, 5px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#errorMessage {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
