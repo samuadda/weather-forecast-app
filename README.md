@@ -1,3 +1,5 @@
+> **Project type: Learning / practice.** This repository documents an earlier stage of my development journey and is kept as a learning reference and portfolio exercise.
+
 <img src="./weather-app-demo.gif" alt="demo-video" width = "332">
 
 # Weather Me
